@@ -12,8 +12,8 @@ dependency "hosted_zone" {
 }
 
 dependencies {
-  paths = ["../dns-hosted-zone"]}
-
+  paths = ["../dns-hosted-zone"]
+}
 
 terraform {
   source = "git::github.com/rx-refill-reminders/terraform-modules//modules/dns-acm-certificate?ref=dns-acm-certificate%2Fv0&depth=0"

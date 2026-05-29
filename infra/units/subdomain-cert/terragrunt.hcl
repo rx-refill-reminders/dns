@@ -22,9 +22,6 @@ terraform {
 inputs = merge(
   values,
   {
-    domain = try(values.domain, null) == null ? null : {
-      zone_id  = dependency.hosted_zone.outputs.zone_id
-      hostname = values.domain.hostname
-    }
+    zone_id  = dependency.hosted_zone.outputs.zone_id
   },
 )

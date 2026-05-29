@@ -17,6 +17,7 @@ unit "subdomain_cert" {
   path   = "subdomain-cert"
 
   values = {
-    hostname = "*.${local.domain}"
+    domain_name = "*.${local.domain}"
+    validate    = true
   }
 }

@@ -22,6 +22,6 @@ terraform {
 inputs = merge(
   values,
   {
-    zone_id  = dependency.hosted_zone.outputs.zone_id
+    zone_id = dependency.hosted_zone.outputs.zone_id
   },
 )

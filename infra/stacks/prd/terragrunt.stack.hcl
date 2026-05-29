@@ -22,3 +22,13 @@ unit "dns_hosted_zone" {
     }
   }
 }
+
+unit "subdomain_cert" {
+  source = "${get_repo_root()}/infra/units/subdomain-cert"
+  path   = "subdomain-cert"
+
+  values = {
+    domain_name = "*.${local.domain}"
+    validate    = true
+  }
+}

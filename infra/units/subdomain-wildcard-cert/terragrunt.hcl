@@ -16,7 +16,7 @@ dependencies {
 }
 
 terraform {
-  source = "git::github.com/rx-refill-reminders/terraform-modules//modules/dns-acm-certificate?ref=dns-acm-certificate%2Fv1&depth=0"
+  source = "git::github.com/rx-refill-reminders/terraform-modules//modules/dns-acm-certificate?ref=optional-validation-records&depth=0"
 }
 
 inputs = merge(

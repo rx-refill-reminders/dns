@@ -22,3 +22,13 @@ unit "dns_hosted_zone" {
     }
   }
 }
+
+unit "subdomain_wildcard_cert" {
+  source = "${get_repo_root()}/infra/units/subdomain-wildcard-cert"
+  path   = "subdomain-wildcard-cert"
+
+  values = {
+    domain_name = "*.${local.domain}"
+    validate    = false
+  }
+}

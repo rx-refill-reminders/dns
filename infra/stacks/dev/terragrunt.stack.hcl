@@ -18,6 +18,6 @@ unit "subdomain_wildcard_cert" {
 
   values = {
     domain_name = "*.${local.domain}"
-    validate    = false
+    validate    = true
   }
 }
